@@ -1,0 +1,6 @@
+#
+# .gitIgnore
+#
+LB-vault/.obsidian
+**/work/
+**/templates
