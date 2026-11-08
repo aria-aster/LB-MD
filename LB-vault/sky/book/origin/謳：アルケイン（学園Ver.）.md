@@ -1,5 +1,5 @@
 ---
-Verse: ""
+Verse: 黒鉄
 Section: ""
 ---
 # Chapter 1

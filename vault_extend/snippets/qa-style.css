@@ -77,7 +77,12 @@
   border-left: solid 2px;
   border-bottom: solid 2px;
   border-color:color-mix(in srgb, var(--hxx-color) 85%, black);
-  background-color: var(--hxx-color);
+  /* 背景にグラデーションを設定（左から右へ） */
+  background: linear-gradient(
+    to right, 
+    color-mix(in srgb, var(--hxx-color), black 5%), /* 左端：ちょっと濃い色 */
+    var(--hxx-color)                               /* 右端：元の色（黒0%） */
+  );
 }
 
 .markdown-preview-view {
@@ -136,7 +141,6 @@
     color-mix(in srgb, var(--hxx-color), black 5%), /* 左端：ちょっと濃い色 */
     var(--hxx-color)                               /* 右端：元の色（黒0%） */
   );
-
 }
 
 
@@ -191,6 +195,30 @@ background-repeat: no-repeat;
 background-position: right center;
 padding-bottom: 0.8em;
 border-bottom: 4px solid #B3C4FD !important;
+}
+
+/* 
+---------------------------------------------------------- 
+ 誓女
+---------------------------------------------------------- 
+*/
+.誓女 {
+  /* 青っぽい */
+  --hxx-color: #eaeaea;
+	background-color: #fafafa; 
+}
+
+.誓女 .inline-title::after,
+.誓女 .webpage-title::after {
+  content: "名乗った名前";
+}
+
+.誓女 .inline-title,
+.誓女 .webpage-title {
+background-repeat: no-repeat;
+background-position: right center;
+padding-bottom: 0.8em;
+border-bottom: 4px solid #555555 !important;
 }
 
 /*

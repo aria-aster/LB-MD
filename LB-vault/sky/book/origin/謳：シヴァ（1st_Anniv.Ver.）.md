@@ -1,5 +1,5 @@
 ---
-Verse: ""
+Verse: 灰世
 Section: ""
 ---
 # Chapter 1
